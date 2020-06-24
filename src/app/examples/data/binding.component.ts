@@ -9,7 +9,7 @@ export class BindingComponent {
   value2 = 'Value2';
   value3 = 'Value3';
   value4 = 'Value4';
-  onInput2(event) {
-    this.value2 = event.target.value;
+  onInput2(event: InputEvent) {
+    this.value2 = (event.target as HTMLInputElement).value;
   }
 }

@@ -8,4 +8,8 @@ import {Component} from '@angular/core';
   // coleccion de estilos que va a utilizar ese componente
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  onMyEvent(event){
+    console.log(event);
+  }
+}
