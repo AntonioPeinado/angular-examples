@@ -8,6 +8,8 @@ import { Ej8Component } from './ej8.component';
 import { Ej9Component } from './ej9.component';
 import { Ej10Component } from './ej10.component';
 import { Ej11Component } from './ej11.component';
+import { MaskPipe } from './ej12.pipe';
+import { AutoFocusDirective } from './ej13.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { Ej11Component } from './ej11.component';
     Ej9Component,
     Ej10Component,
     Ej11Component,
-    ExercisesComponent
+    ExercisesComponent,
+    MaskPipe,
+    AutoFocusDirective
   ],
   exports: [
     ExercisesComponent
