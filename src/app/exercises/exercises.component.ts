@@ -4,4 +4,9 @@ import { Component } from '@angular/core';
   selector: 'ps-exercises',
   templateUrl: './exercises.component.html'
 })
-export class ExercisesComponent { }
+export class ExercisesComponent {
+  value = "abc"
+  onChange(reverse: string){
+    alert(reverse);
+  }
+}
