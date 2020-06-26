@@ -8,6 +8,7 @@ interface Foo {
 })
 export class ExercisesComponent {
   value = "abc";
+  show = true;
   obj?: Foo;
   onChange(reverse: string){
     alert(reverse);

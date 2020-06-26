@@ -10,6 +10,8 @@ import { Ej10Component } from './ej10.component';
 import { Ej11Component } from './ej11.component';
 import { MaskPipe } from './ej12.pipe';
 import { AutoFocusDirective } from './ej13.directive';
+import { Ej14Component } from './ej14.component';
+import { Ej15Component } from './ej15.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AutoFocusDirective } from './ej13.directive';
     Ej11Component,
     ExercisesComponent,
     MaskPipe,
-    AutoFocusDirective
+    AutoFocusDirective,
+    Ej14Component,
+    Ej15Component
   ],
   exports: [
     ExercisesComponent
