@@ -12,6 +12,8 @@ import { MaskPipe } from './ej12.pipe';
 import { AutoFocusDirective } from './ej13.directive';
 import { Ej14Component } from './ej14.component';
 import { Ej15Component } from './ej15.component';
+import { Ej16BService } from './ej16b.service';
+import { Ej16Component } from './ej16.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,17 @@ import { Ej15Component } from './ej15.component';
     MaskPipe,
     AutoFocusDirective,
     Ej14Component,
-    Ej15Component
+    Ej15Component,
+    Ej16Component
   ],
   exports: [
     ExercisesComponent
   ],
   imports: [
     CommonModule
+  ],
+  providers: [
+    Ej16BService
   ]
 })
 export class ExercisesModule {}
