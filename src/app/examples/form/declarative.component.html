@@ -1,0 +1,26 @@
+<h1>Declarative</h1>
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <input
+    type="text"
+    name="email"
+    [(ngModel)]="model.email"
+    required
+    email
+    #email="ngModel"
+  >
+  <p *ngIf="showEmailError(email, form)">Email invalido</p>
+  <input
+    type="password"
+    name="password"
+    [(ngModel)]="model.password"
+    required
+    minlength="3"
+    psPassword
+    #password="ngModel"
+  >
+  <p *ngIf="password.invalid && password.errors?.password && password.touched || form.submitted">
+    {{password.errors?.password}}
+  </p>
+
+  <button>Submit</button>
+</form>

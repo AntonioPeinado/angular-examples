@@ -4,6 +4,8 @@ import { DataModule } from './data/data.module';
 import { PipesModule } from './pipes/pipes.module';
 import { DirectivesModule } from './directives/directives.module';
 import { ServicesModule } from './services/services.module';
+import { HTTPModule } from './http/http.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   exports: [
@@ -11,7 +13,9 @@ import { ServicesModule } from './services/services.module';
     DataModule,
     PipesModule,
     DirectivesModule,
-    ServicesModule
+    ServicesModule,
+    HTTPModule,
+    FormsModule
   ]
 })
 export class ExamplesModule {}
